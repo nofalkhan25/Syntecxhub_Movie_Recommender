@@ -156,22 +156,6 @@ Besides qualitative sample queries, `mean_genre_overlap_at_k()` computes a proxy
 
 Worth noting: this metric measures **genre-consistency**, not recommendation *quality* — since `genre_weight` already controls how much genre drives the similarity score, a high score here mostly confirms the model does what it was built to do. It’s best used as a regression check (“did a code change break genre alignment?”), not as evidence users would actually like the results. See the [full report](#full-technical-report) for the complete discussion.
 
-## Diagrams
-
-<p align="center">
-  <img src="assets/pipeline_diagram.png" alt="End-to-end pipeline" width="700"><br>
-  <em>End-to-end content-based recommendation pipeline</em>
-</p>
-
-<p align="center">
-  <img src="assets/genre_distribution.png" alt="Genre distribution" width="500">
-  <img src="assets/similarity_heatmap.png" alt="Cosine similarity heatmap" width="440">
-</p>
-
-<p align="center">
-  <img src="assets/architecture_diagram.png" alt="Flask API architecture" width="420"><br>
-  <em>Optional Flask API request flow</em>
-</p>
 
 ## Roadmap
 
